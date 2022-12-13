@@ -2,10 +2,11 @@ import discord
 from discord.ext import commands
 from src import responses
 from src import log
+from os import environ as env
 
 logger = log.setup_logger(__name__)
 
-data = responses.get_config()
+data = env
 
 isPrivate = False
 
