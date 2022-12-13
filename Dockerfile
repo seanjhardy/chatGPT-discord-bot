@@ -1,4 +1,4 @@
-FROM --platform=arm64 python:3.9-slim
+FROM ubuntu:20.04
 RUN apt-get update && \
     apt-get install -yq tzdata && \
     ln -fs /usr/share/zoneinfo/America/New_York /etc/localtime && \
